@@ -17,7 +17,6 @@ import {
 const deployProtocol: DeployFunction = async (hre) => {
   const { contracts, network, getNamedAccounts, log } = hre
   const { deployer } = await getNamedAccounts()
-  console.log({ deployer })
 
   log('********** Teller Diamond **********', { indent: 1 })
 
