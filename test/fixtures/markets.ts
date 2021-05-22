@@ -41,10 +41,12 @@ export const fundedMarket = hre.deployments.createFixture(
     }
 
     const funder = await getNamedSigner('funder')
+    const funderA = await funder.getAddress()
     await getFunds({
       to: funder,
       tokenSym: assetSym,
       amount: amountToFundLP,
+      hre,
     })
     await lendingToken.connect(funder).approve(diamond.address, amountToFundLP)
     await diamond
