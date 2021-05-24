@@ -8,6 +8,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol";
 interface ITellerNFT {
     struct Tier {
         uint256 baseLoanSize;
+        // TODO: Create mapping of hash index
         string[] hashes;
         address contributionAsset;
         uint256 contributionSize;

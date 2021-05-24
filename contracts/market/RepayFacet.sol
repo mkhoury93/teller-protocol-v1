@@ -59,7 +59,7 @@ contract RepayFacet is RolesMods, ReentryMods, PausableMods {
     );
 
     /**
-     * @notice This event is emitted when a loan has been successfully liquidated
+     * @notice This event is emitted when a loan has been successfully cd
      * @param loanID ID of loan from which collateral was withdrawn
      * @param borrower Account address of the borrower
      * @param liquidator Account address of the liquidator
